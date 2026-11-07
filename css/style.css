@@ -3937,3 +3937,69 @@ input[type=number] {
         margin-bottom: 120px
     }
 }
+
+#experience {
+    padding-top: 120px;
+    margin-bottom: 120px
+}
+
+.resume_highlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 55px
+}
+
+.resume_group {
+    padding: 28px;
+    border: 1px solid rgba(128, 128, 128, .25);
+    border-radius: 12px
+}
+
+.resume_group h4 {
+    margin-bottom: 18px;
+    font-size: 24px
+}
+
+.resume_group h5 {
+    margin-bottom: 6px;
+    font-size: 18px
+}
+
+.resume_group p,
+.resume_group li {
+    line-height: 1.6
+}
+
+.resume_group ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    list-style: disc
+}
+
+.resume_item + .resume_item {
+    margin-top: 24px
+}
+
+.resume_date {
+    display: block;
+    margin-bottom: 10px;
+    color: #777
+}
+
+@media(max-width: 768px) {
+    #experience {
+        padding-top: 90px;
+        margin-bottom: 90px
+    }
+
+    .resume_highlights {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 35px
+    }
+
+    .resume_group {
+        padding: 22px
+    }
+}
